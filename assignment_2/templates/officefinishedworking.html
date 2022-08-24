@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, tr, th {
+            padding: 10px;
+            border: 2px solid #1c87c9;
+            border-radius: 5px;
+            background-color: #e5e5e5;
+            text-align: center;
+            }
+            
+        </style>
+        <title>Office Info</title>
+    </head>
+    <body>
+        
+        <h1>Successfully removed employee by Id in office Data!</h1>        
+        <table border="1">
+            <caption><b>Office Data </b></caption>
+            <thead>
+                <tr>    
+                    
+                    <th> Employee Id </th>
+                    <th> Office Name </th>
+                    <th> Employee Name </th>
+                    <th> Employee Age </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+                  <tr>
+                    <td>{{ result_office["employee_id"] }}</td>
+                    <td>{{ result_office["office_name"] }}</td>
+                    <td>{{ result_office["employee_name"] }}</td>
+                    <td>{{ result_office["employee_age"] }}</td>
+                  </tr>
+                
+              </tbody>
+
+        </table>
+        
+    </body>
+</html>

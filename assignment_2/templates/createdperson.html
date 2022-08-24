@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, tr, th {
+            padding: 10px;
+            border: 2px solid #1c87c9;
+            border-radius: 5px;
+            background-color: #e5e5e5;
+            text-align: center;
+            }
+            
+        </style>
+        <title>Persons</title>
+    </head>
+    <body>
+        
+        <h1>Successfully added Person data!</h1>        
+        <table border="1">
+            <caption><b>Persons Data </b></caption>
+            <thead>
+                <tr>    
+                    
+                    <th> Id </th>
+                    <th> Name </th>
+                    <th> Age </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+                  <tr>
+                    <td>{{ result_dict["person_id"] }}</td>
+                    <td>{{ result_dict["name"] }}</td>
+                    <td>{{ result_dict["age"] }}</td>
+                  </tr>
+                
+              </tbody>
+
+        </table>
+        
+    </body>
+</html>

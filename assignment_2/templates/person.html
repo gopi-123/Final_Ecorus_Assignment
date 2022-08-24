@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, tr, th {
+            padding: 10px;
+            border: 2px solid #1c87c9;
+            border-radius: 5px;
+            background-color: #e5e5e5;
+            text-align: center;
+            }
+            
+        </style>
+        <title>Person</title>
+    </head>
+    <body>
+        
+        <h1>Welcome to the site!</h1>        
+        <table border="1">
+            <caption><b>Persons Data </b></caption>
+            <thead>
+                <tr>    
+                    
+                    <th> Id </th>
+                    <th> Name </th>
+                    <th> Age </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for person in result_user %}
+                  <tr>
+                    <td>{{ person["person_id"] }}</td>
+                    <td>{{ person["name"] }}</td>
+                    <td>{{ person["age"] }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+
+        </table>
+        
+    </body>
+</html>
